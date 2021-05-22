@@ -1,6 +1,7 @@
 # graphql-react
 
-graphql with react [udemy tutorial](https://www.udemy.com/course/graphql-with-react-course/)
+graphql with react [udemy tutorial](https://www.udemy.com/course/graphql-with-react-course/).
+starter project code cloned from [Lyrical-GraphQL](https://github.com/stephengrider/lyrical-graphql).
 
 ### technologies
 
