@@ -9,6 +9,7 @@ json-server
 
 - quick setup server for development
 - runs on sep localhost 3000
+- later changed to mongoose as the real database
 
 nodemon
 
@@ -17,7 +18,7 @@ nodemon
 
 ### udemy notes
 
-section 25: query fragments in GraphiQL.
+**section 25: query fragments in GraphiQL.**
 
 ```
 {
@@ -33,5 +34,19 @@ fragment companyDetails on Company {
   id
   name
   description
+}
+```
+
+**section 34: mongoDB setup**
+
+ran into some deprication issues:
+found solution here https://mongoosejs.com/docs/deprecations.html
+
+passed the following options into mongoose.connect()
+
+```
+{
+  useNewUrlParser: true,
+  useUnifiedTopology: true,
 }
 ```
