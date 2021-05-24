@@ -1,7 +1,7 @@
 require("dotenv").config();
 const express = require("express");
 const models = require("./models");
-const expressGraphQL = require("express-graphql");
+const expressGraphQL = require("express-graphql").graphqlHTTP;
 const mongoose = require("mongoose");
 const bodyParser = require("body-parser");
 const schema = require("./schema/schema");
