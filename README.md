@@ -95,3 +95,7 @@ _error:_
 
 _fix:_
 `npm install apollo-boost` and import ApolloClient from that module instead of from 'apollo-client' module.
+
+**Section 44**
+Changed `import {Router, Route, hashHistory, IndexRoute} from "react-router"`
+to `import { Route, HashRouter } from "react-router-dom"`
