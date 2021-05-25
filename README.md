@@ -81,11 +81,15 @@ create `bable.config.json` and add to it:
 ```
 
 [git issues soln source](https://github.com/babel/babel/issues/12018#issuecomment-683260049)
+
 [babel config](https://babeljs.io/docs/en/configuration)
 
 _error:_
+
 butt load of dependencies being outdated
+
 _fix:_
+
 [npm-check-updates](https://flaviocopes.com/update-npm-dependencies/) module
 
 _error:_
@@ -97,5 +101,9 @@ _fix:_
 `npm install apollo-boost` and import ApolloClient from that module instead of from 'apollo-client' module.
 
 **Section 44**
-Changed `import {Router, Route, hashHistory, IndexRoute} from "react-router"`
-to `import { Route, HashRouter } from "react-router-dom"`
+Changed `import {Router, Route, hashHistory, IndexRoute} from "react-router"` to
+
+```
+import { Route, Router, Switch } from "react-router-dom";
+import history from "./history";
+```
