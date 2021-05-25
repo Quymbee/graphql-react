@@ -1,4 +1,5 @@
 import React from "react";
+import "./style/style.css";
 import ReactDOM from "react-dom";
 import { Route, Router, Switch } from "react-router-dom";
 import history from "./history";
