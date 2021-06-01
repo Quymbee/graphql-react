@@ -104,16 +104,15 @@ _fix:_
 **Section 44**
 Changed `import {Router, Route, hashHistory, IndexRoute} from "react-router"` since hashHistory and IndexRoute are deprecated from React Router v4
 
-~~
 
+_originally changed to:_ 
 ```
 import { Route, Router, Switch } from "react-router-dom";
 import history from "./history";
 ```
 
-~~
 
-_update:_
+_updated to:_
 ended up using HashRouter and createHashhistory instead since Router was giving different issues.
 tutorial uses hash routing. but it's noted to be sort of 'hacky' as a fix [here](https://ui.dev/react-router-cannot-get-url-refresh/)
 
