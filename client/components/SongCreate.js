@@ -23,7 +23,6 @@ class SongCreate extends Component {
       })
       .then(() => {
         history.push("/");
-        history.go();
       })
       .catch((err) => console.log(err));
   }
