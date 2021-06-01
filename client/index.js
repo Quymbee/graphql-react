@@ -1,7 +1,7 @@
 import React from "react";
 import "./style/style.css";
 import ReactDOM from "react-dom";
-import { Route, Router, Switch } from "react-router-dom";
+import { Route, HashRouter, Switch } from "react-router-dom";
 import history from "./history";
 import ApolloClient from "apollo-boost";
 import { ApolloProvider } from "react-apollo";
@@ -14,7 +14,7 @@ const client = new ApolloClient({});
 const Root = () => {
   return (
     <ApolloProvider client={client}>
-      <Router history={history}>
+      <HashRouter history={history}>
         <>
           <Switch>
             <Route exact path="/" exact component={App} />
@@ -22,7 +22,7 @@ const Root = () => {
             <Route exact path="/songs/:id" component={SongDetail} />
           </Switch>
         </>
-      </Router>
+      </HashRouter>
     </ApolloProvider>
   );
 };
